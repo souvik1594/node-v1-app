@@ -1,11 +1,11 @@
 const fs = require("fs");
 const path = require("path");
-const data = JSON.parse(
-  fs.readFileSync(path.resolve(__dirname, "../public/data.json"), "utf-8")
-);
-const users = data.users;
+// const data = JSON.parse(
+//   fs.readFileSync(path.resolve(__dirname, "../public/data.json"), "utf-8")
+// );
+// const users = data.users;
 //Creating Functions
-
+const users = {};
 exports.createProduct = (req, res) => {
   console.log(req.body);
   users.push(req.body);
